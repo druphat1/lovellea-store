@@ -1,0 +1,18 @@
+<div>  
+    <div class="bg-gradient"></div>
+    <div class="login-card">
+        <h2>Lovely Gift Center</h2>
+        <div class="input-group">
+            <input type="text" placeholder="Username" [(ngModel)]="username" />
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password"  [(ngModel)]="password" />
+        </div>
+        <button class="login-btn" (click)="login()">Login</button>
+        <div class="links">
+            <a href="#">Password reset</a>
+            <a (click)="registerMain()">Registration</a>
+        </div>
+    </div>
+</div> 
+

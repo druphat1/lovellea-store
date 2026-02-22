@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="left">
+    <h1 class="logo">
+      <span>Lovely</span>
+      <span>Gift Center</span>
+    </h1>
+    <img  src="assets/happy-young.png"  alt="Kids playing with toys"  class="illustration"/>
+  </div>
+  <div class="right">
+    <div class="card">
+      <h2>Registration</h2>
+      <label>Name</label>
+      <input  (keyup)="onkeyUp(titleValue.value)" [value]="data.title" #titleValue />
+      <label>Email Address</label>
+      <input type="email" placeholder="Email Address"  />
+      <label>Create Password</label>
+      <div class="password">
+        <input type="password"  placeholder="Create Password"  />
+      </div>
+      <label>Confirm Password</label>
+      <div class="password">
+        <input type="Confirm password" placeholder="Confirm Password" />
+      </div>
+      <button (click)="confirm()">Sign Up</button>
+      <p class="login-text">Already have password?</p>
+    </div>
+  </div>
+</div>

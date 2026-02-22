@@ -1,0 +1,221 @@
+
+<div class="main-contanier">
+  <header class="topbar">
+    <div class="logo">
+      <img src="assets/Lovely-gift-center-removebg-preview.png" alt="Toy Shop Logo">
+      <div class="logo-title">
+       <span>Lovely</span>
+        <span> Gift Center</span>
+    </div>  
+    </div>
+    <nav class="nav-links">
+      <a>New Products</a>
+      <a>Toys Hospital</a>
+      <a>Our Features</a>
+      <a>FAQ</a>
+      <a>Lucky Spin</a>
+      <a>Best Offers</a>
+      <a>Toys</a>
+      <a  (click) ="loginMain()">Login</a>
+      <a (click)="registerMain()">Register</a>
+    </nav>
+    <div class="parent-btn">
+      <img src="assets/parent-icon.png" alt="">
+      <span>Parent Entrance</span>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-title">
+      <img src="assets/elephant.png" class="side-toy left" alt="">
+      <h1>Let's Dive To ChildHood Time</h1>
+      <img src="assets/train.png" class="side-toy right" alt="">
+    </div>
+
+    <div class="characters">
+      <img src="assets/dracula-removebg-preview.png" alt="">
+      <img src="assets/boy-removebg-preview.png" alt="">
+      <img src="assets/cartoon-cute-little-removebg-preview.png" alt="">
+      <img src="assets/cute-little-girl.png" alt="">
+      <img src="assets/images-removebg-preview.png" alt="">
+    </div>
+  </section>
+</div>
+<section class="products">
+  <h2>New Products</h2>
+  <p class="subtitle">Our new toys are here dear customers</p>
+   <div class="slider-wrapper">
+    <button class="nav-btn left" (click)="slideLeft()">&#10094;</button>
+    <div class="product-slider" #slider>
+       <div class="product-card" *ngFor="let item of products">
+         <div class="img-circle">
+          <img [src]="item.image" alt="">
+         </div>
+         <h3>{{item.name}}</h3>
+         <div class="price">
+            <span class="old">{{item.oldPrice}}</span>
+           <span class="new">{{item.price}}</span>
+         </div>
+         <button class="add-btn">+</button>
+       </div>
+    </div>
+    <button class="nav-btn right" (click)="slideRight()" >&#10095;</button>
+   </div>
+</section>
+<!-- <section class="toy-doctor">
+  <div class="overlay"></div>
+  <div class="doctor-content">
+    <h2>Someone Called For A Doctor?</h2>
+    <p>Got a hurt toy? Just pick it here and we’ll make it happy again</p>
+    <div class="help-card">
+      <div class="step-header">
+        <span class="step-number">1</span>
+        <span class="step-text">Which Of your Lovely Toy Need Our Help?</span>
+        <div class="step-nav">
+          <span class="prev">Prev Step</span>
+          <div class="progress">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="next">Next Step</span>
+        </div>
+      </div>
+      <div class="toy-options">
+        <div class="toy-option" *ngFor="let toy of toyCategories">
+          <div class="toy-img">
+            <img [src]="toy.image" alt="">
+          </div>
+          <span>{{toy.name}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="assets/doctor1.png" class="doctor-img left-doc" alt="">
+  <img src="assets/doctor2.png" class="doctor-img right-doc" alt="">
+</section> -->
+<section class="toy-doctor">
+
+  <!-- Background Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <div class="doctor-content">
+
+    <h2>Someone Called For A Doctor?</h2>
+    <p>Got a hurt toy? Just pick it here and we’ll make it happy again</p>
+
+    <div class="help-card">
+
+      <!-- Step Header -->
+      <div class="step-header">
+        <span class="step-number">1</span>
+        <span class="step-text">
+          Which Of Your Lovely Toys Need Our Help?
+        </span>
+
+        <div class="step-nav">
+          <span class="prev">Prev Step</span>
+
+          <div class="progress">
+            <div class="progress-fill"></div>
+          </div>
+
+          <span class="next">Next Step</span>
+        </div>
+      </div>
+
+      <!-- Toy Options -->
+      <div class="toy-options">
+        <div class="toy-option" *ngFor="let toy of toyCategories">
+          <div class="toy-img">
+            <img [src]="toy.image" [alt]="toy.name" />
+          </div>
+          <span>{{ toy.name }}</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Doctor Images -->
+  <img src="assets/doctor1.png" class="doctor-img left-doc" alt="Doctor Left">
+  <img src="assets/doctor2.png" class="doctor-img right-doc" alt="Doctor Right">
+
+</section>
+
+<div class="container">
+   <section class="features-section">
+    <h2>Our Features</h2>
+    <p class="subtitle">Why you need to choose us ?</p>
+     <div class="features-grid">
+  <div class="feature-card">
+    <div class="card-inner purple">
+      <img src="assets/delviery-removebg-preview.png" alt="">
+      <h4>Easy Return</h4>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-inner peach">
+      <img src="assets/80134-removebg-preview.png" alt="">
+      <h4>Secure & Flexible Payments</h4>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-inner pink">
+      <img src="assets/images/delivery" alt="">
+      <h4>Fast Delivery</h4>
+    </div>
+  </div>
+
+  <div class="feature-card">
+    <div class="card-inner orange">
+      <img src="assets/images/support.png" alt="">
+      <h4>24/7 Support</h4>
+    </div>
+  </div>
+</div>
+
+   </section>
+   <section class="offers-section">
+     <h2>Best Offers</h2>
+     <p class="subtitle">Here You can see our best Offers</p>
+     <div class="offers-wrapper">
+        <button class="nav-btn left">&#10094;</button>
+         <div class="offers-grid">
+           <div class="product-card">
+              <div class="image-circle">
+                 <img src="assets/images/shoes.png" alt="">
+              </div>
+              <h4>Lovely Kid Shoes</h4>
+              <p><span class="old-price">150$</span> 46$</p>
+              <button class="add-btn">+</button>
+           </div>
+            <div class="product-card">
+               <div class="image-circle beige">
+                 <img src="assets/images/bell.png" alt="">
+               </div>
+               <h4>Beautiful Old Belz</h4>
+               <p><span class="old-price">230$</span> 23$</p>
+               <button class="add-btn">+</button>
+            </div>
+            <div class="product-card">
+               <div class="image-circle pink">
+                <img src="assets/images/robot.png" alt="">
+               </div>
+               <h4>Small Red Robot</h4>
+               <p><span class="old-price">450$</span> 100$</p>
+               <button class="add-btn">+</button>
+            </div>
+            <div class="product-card">
+               <div class="image-circle peach">
+                 <img src="assets/images/toy.png" alt="">
+                </div>
+                <h4>Lovely Kid Toys</h4>
+                <p><span class="old-price">150$</span> 46$</p>
+                <button class="add-btn">+</button>
+            </div>
+         </div>
+          <button class="nav-btn right">&#10095;</button>
+     </div>
+    </section>
+</div>

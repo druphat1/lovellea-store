@@ -1,0 +1,119 @@
+:host {
+     display: block;
+     height: 100vh;
+     font-family: "Segoe UI", sans-serif;
+}
+.bg-gradient {
+    position: fixed;
+     inset: 0;
+     background: linear-gradient(135deg, #2ce0c5, #7b6df6);
+     z-index: -1;
+     animation: gradientMove 8s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.login-card {
+  width: 420px;
+  background: #fff;
+  margin: auto;
+  margin-top: 12vh;
+  padding: 40px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  animation: cardFade 0.8s ease forwards;
+}
+@keyframes cardFade {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+h2 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.input-group {
+  margin-bottom: 18px;
+}
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+
+  font-size: 15px;
+  outline: none;
+}
+.input-group input {
+  transition: all 0.3s ease;
+}
+.input-group input:focus {
+  border-color: #7b6df6;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+   border-radius: 12px;
+  background: linear-gradient(to right, #2ce0c5, #7b6df6);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  opacity: 0.9;
+}
+
+.links {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7b6df6;
+}
+
+.login-btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(123, 109, 246, 0.3);
+}
+
+.login-btn:active {
+  transform: scale(0.97);
+}
+.links a {
+  position: relative;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #7b6df6;
+  transition: width 0.3s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
