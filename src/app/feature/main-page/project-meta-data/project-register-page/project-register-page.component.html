@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="left">
     <h1 class="logo">
       <span>Lovely</span>
@@ -24,5 +24,72 @@
       <button (click)="confirm()">Sign Up</button>
       <p class="login-text">Already have password?</p>
     </div>
+  </div>
+</div> -->
+<!-- <div class="toy-land-container">
+  <div class="floating-toy unicorn-1">🦄</div>
+  <div class="floating-toy unicorn-2">🦄</div>
+  <div class="floating-toy gift-1">🎁</div>
+  <div class="floating-toy gift-2">🎁</div>
+
+  <div class="register-card">
+    <div class="glass-header">
+      <h2>Toy Land Adventures ✨</h2>
+    </div>
+
+    <div class="form-body">
+      <div class="input-group">
+        <label>Name</label>
+        <input type="text" [value]="data.title" (keyup)="onkeyUp(nameInput.value)" #nameInput placeholder="Enter your name">
+      </div>
+
+      <div class="input-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Email">
+      </div>
+
+      <div class="input-group">
+        <label>Create Password</label>
+        <input type="password" placeholder="••••••••">
+      </div>
+
+      <button class="signup-btn" (click)="confirm()">Sign Up</button>
+      
+      <p class="login-link">Already have an account? <span>Login</span></p>
+    </div>
+  </div>
+</div> -->
+<div class="toy-land-container">
+  <div class="toy robot-toy">🦄</div>
+  <div class="toy unicorn-toy-1">🦄</div>
+  <div class="toy unicorn-toy-2">🎁</div>
+  <div class="toy unicorn-toy-3">🎁</div>
+  <div class="toy chest-toy"></div>
+
+  <div class="register-card">
+    <div class="sparkles">✨</div>
+    <h2>Toy Land Adventures ✨</h2>
+    
+    <div class="input-group">
+      <span class="icon">👤</span>
+      <input type="text" placeholder="Username" #username (keyup)="onkeyUp(username.value)">
+    </div>
+
+    <div class="input-group">
+      <span class="icon">📧</span>
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <span class="icon">🔒</span>
+      <input type="password" placeholder="Password">
+    </div>
+
+    <div class="input-group">
+      <span class="icon">🔑</span>
+      <input type="password" placeholder="Confirm Password">
+    </div>
+
+    <button class="sign-up-btn" (click)="confirm()">Sign Up</button>
   </div>
 </div>
