@@ -60,18 +60,15 @@ input {
   border: none;
   margin-top: 6px;
 }
-
 .password {
   position: relative;
 }
-
 .eye {
   position: absolute;
   right: 12px;
   top: 12px;
   cursor: pointer;
 }
-
 button {
   width: 100%;
   margin-top: 20px;
@@ -83,13 +80,11 @@ button {
   border-radius: 20px;
   cursor: pointer;
 }
-
 .login-text {
   text-align: center;
   margin-top: 15px;
   font-size: 13px;
 } */
-
 .toy-land-container {
   height: 100vh;
   width: 100%;
